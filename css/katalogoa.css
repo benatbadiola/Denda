@@ -20,7 +20,6 @@ header img {
 }
 
 
-
 h1 {
     width: 19.6850393701%;
     position: relative;
@@ -47,9 +46,7 @@ main {
 footer{
     margin: 1.968503937007874%;
     padding: 1.968503937007874%;
-    border: 1px dashed black;
-    
-    
+    border: 1px dashed black;    
 }
 section img{
     width: 50%;
@@ -60,59 +57,72 @@ div{
     border: 1px dashed black;
 }
 
-
 section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(7, 1fr);
-    gap: 1.968503937007874%;    
+    column-gap: 1.968503937007874%;
+    row-gap: 0.59734891433668640%;
 }
 
 
 
 #div1 { grid-column: 1 / 3;
-        grid-row: 1/1 ; }
+        grid-row: 1/2 ; }
 #div2 { grid-column: 3 / 4;
-        grid-row: 1/1 ; }
+        grid-row: 1/2 ; }
 #div3 { grid-column: 4 / 6;
-        grid-row: 1/1 ; }
+        grid-row: 1/2 ; }
 
 #div4 { grid-column: 1 / 2;
-        grid-row: 2/2 ; }
+        grid-row: 2/3 ; }
 #div5 { grid-column: 2 / 5;
-        grid-row: 2/2 ; }
+        grid-row: 2/3 ; }
 #div6 { grid-column: 5 / 6;
-        grid-row: 2/2 ; }
+        grid-row: 2/3 ; }
 
 #div7 { grid-column: 1 / 3;
-        grid-row: 3/3 ; }
+        grid-row: 3/4 ; }
 #div8 { grid-column: 3 / 4;
-        grid-row: 3/3 ; }
+        grid-row: 3/4 ; }
 #div9 { grid-column: 4 / 6;
-        grid-row: 3/3 ; }
+        grid-row: 3/4 ; }
 
 #div10 { grid-column: 1 / 2;
-         grid-row: 4/4 ; }
+        grid-row: 4/5 ; }
 #div11 { grid-column: 2 / 5;
-         grid-row: 4/4 ; }
+        grid-row: 4/5 ; }
 #div12 { grid-column: 5 / 6;
-         grid-row: 4/4 ; }
+        grid-row: 4/5 ; }
 
 #div13 { grid-column: 1 / 3;
-         grid-row: 5/5 ; }
+        grid-row: 5/6 ; }
 #div14 { grid-column: 3 / 4;
-         grid-row: 5/5 ; }
+        grid-row: 5/6 ; }
 #div15 { grid-column: 4 / 6;
-         grid-row: 5/5 ;}
+        grid-row: 5/6 ;}
 
 #div16 { grid-column: 1 / 2;
-         grid-row: 6/6 ; }
+        grid-row: 6/7 ; }
 #div17 { grid-column: 2 / 5;
-         grid-row: 6/6; }
+        grid-row: 6/7; }
 #div18 { grid-column: 5 / 6;
-         grid-row: 6/6; }
+        grid-row: 6/7; }
 
 #div19 { grid-column: 1 / 3;
-         grid-row: 7/7; }
+        grid-row: 7/8; }
 #div20 { grid-column: 4 / 6;
-         grid-row: 7/7; }
+        grid-row: 7/8; }
+         
+@media only screen and (max-width: 762px)
+{
+    section{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(20, 1fr);
+        row-gap: 15px;  
+    }
+
+    section div{
+        grid-area: auto !important;
+    }
+}

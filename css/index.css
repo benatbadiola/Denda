@@ -8,6 +8,7 @@ body {
     max-width: 762px;
     margin: 0 auto;
     border: 1px dashed black;
+    
 }
 
 header {
@@ -45,10 +46,32 @@ main {
     border: 1px dashed black;
 }
 
-aside, main section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+
+#erdia {
+    border: 1px dashed black;
+    margin: 1.968503937007874%;
+    padding: 1.968503937007874%;
+}
+section {
+   
+    border: 1px dashed black;
+    margin: 1.968503937007874%;
+    padding: 1.968503937007874%;
+}
+#ezkerra {
+    
+    border: 1px dashed black;
+    margin: 1.968503937007874%;
+    padding: 1.968503937007874%;
+    max-height: fit-content;
+}
+
+#eskuina{
+      
+    border: 1px dashed black;
+    margin: 1.968503937007874%;
+    padding: 1.968503937007874%;
+    max-height: fit-content;
 }
 
 aside div, main section div {
@@ -76,4 +99,24 @@ footer{
     padding: 1.968503937007874%;
     border: 1px dashed black;
 }
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.968503937007874%;
+}
+
+@media (max-width: 762px) {
+    main{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 381px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
