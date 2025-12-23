@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <title>Saskia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            max-width: 1000px;
+            margin: 20px auto;
+            border: 1px dashed black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header, nav, main, footer{
+            margin: 20px;
+            padding: 20px;
+            border: 1px dashed black;
+        }
+
+        /* HEADER */
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .ezkerra{
+            display: flex;
+            align-items: center;
+        }
+
+        header img{
+            width: 100px;
+            margin-right: 15px;
+        }
+
+        header a{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* NAV */
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* MAIN */
+        main h2{
+            margin-bottom: 10px;
+        }
+
+        main hr{
+            border: 0;
+            border-top: 1px dotted #ccc;
+            margin-bottom: 20px;
+        }
+
+        h3{
+            margin-bottom: 15px;
+        }
+
+        /* TAULA ETA EDUKIA */
+        .saskia-taula {
+            border: 1px dashed black;
+            padding: 20px;
+            width: fit-content;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding-bottom: 20px;
+            font-weight: normal;
+        }
+
+        td {
+            padding: 10px 20px 10px 0;
+            vertical-align: middle;
+        }
+
+        .prezioa, .guztira-zutabea {
+            min-width: 80px;
+        }
+
+        .kopurua input {
+            width: 40px;
+        }
+
+        /* BOTOIAK */
+        .ezabatu-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .eskaria-egin-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="ezkerra">
+            <img src="img/logoa.jpg" alt="Lea Artibai Ikastetxea">
+            <h1>Denda</h1>
+        </div>
+        <a href="#">Saskia</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Hasiera</a></li>
+            <li><a href="katalogoa.html">Katalogoa</a></li>
+            <li><a href="#">Nobedadeak</a></li>
+            <li><a href="#">Eskaintzak</a></li>
+            <li><a href="kontaktua.html">Kontaktua</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Saskia</h2>
+        <hr>
+        <h3>Produktuak</h3>
+
+        <div class="saskia-taula">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produktua</th>
+                        <th>Salneurria</th>
+                        <th>Kopurua</th>
+                        <th>Guztira</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Les Paul 68</td>
+                        <td class="prezioa">5977&euro;</td>
+                        <td class="kopurua"><input type="number" value="1"></td>
+                        <td class="guztira-zutabea">5977&euro;</td>
+                        <td><button class="ezabatu-btn">Ezabatu</button></td>
+                    </tr>
+                    <tr>
+                        <td>Martin guitar</td>
+                        <td class="prezioa">4666&euro;</td>
+                        <td class="kopurua"><input type="number" value="1"></td>
+                        <td class="guztira-zutabea">4666&euro;</td>
+                        <td><button class="ezabatu-btn">Ezabatu</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: right; padding-top: 20px;">Guztira</td>
+                        <td style="padding-top: 20px; font-weight: bold;">10643&euro;</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button class="eskaria-egin-btn">Eskaria egin</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2020 Lea Artibai Ikastetxea</p>
+    </footer>
+
+</body>
+</html>

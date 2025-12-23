@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <title>Eskaria - Eskerrik asko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            max-width: 1000px; 
+            margin: 2% auto;
+            border: 1px dashed black;
+            
+        }
+
+        header, nav, main, footer{
+            margin: 2%;
+            padding: 2%;
+            border: 1px dashed black;
+        }
+
+        
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .ezkerra{
+            display: flex;
+            align-items: center;
+        }
+
+        header img{
+            width: 100px;
+            margin-right: 2%;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        header a{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 2%;
+        }
+
+        nav a{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        
+        main h2{
+            margin-bottom: 2%;
+            font-size: 1.8em;
+        }
+
+        main hr{
+            border: 0;
+            border-top: 1px dotted #ccc; 
+            margin-bottom: 2%;
+        }
+
+        main p {
+            font-size: 1.1em;
+            margin-bottom: 2%;
+        }
+
+        
+        footer{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="ezkerra">
+            <img src="img/logoa.jpg" alt="Lea Artibai Ikastetxea">
+            <h1>Denda</h1>
+        </div>
+        <a href="#">Saskia</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Hasiera</a></li>
+            <li><a href="katalogoa.html">Katalogoa</a></li>
+            <li><a href="#">Nobedadeak</a></li>
+            <li><a href="#">Eskaintzak</a></li>
+            <li><a href="kontaktua.html">Kontaktua</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Eskaria</h2>
+        <hr>
+        <p>Eskaria jaso da, eskerrik asko!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2020 Lea Artibai Ikastetxea</p>
+    </footer>
+
+</body>
+</html>

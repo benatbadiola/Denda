@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <title>Eskaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px dashed black;
+            
+        }
+
+        header, nav, main, footer{
+            margin: 2%;
+            padding: 2%;
+            border: 1px dashed black;
+        }
+
+        
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .ezkerra{
+            display: flex;
+            align-items: center;
+        }
+
+        header img{
+            width: 80px;
+            margin-right: 15px;
+        }
+
+        header a{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        
+        nav ul{
+            list-style: none;
+        }
+
+        nav li{
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        
+        main h2{
+            margin-bottom: 10px;
+        }
+
+        main hr{
+            margin-bottom: 15px;
+        }
+
+        h3{
+            margin: 15px 0;
+        }
+
+        
+        table{
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+        }
+
+        th, td{
+            padding: 10px;
+            text-align: left;
+        }
+
+        
+        section{
+            border: 1px dashed black;
+            padding: 15px;
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+
+        section p{
+            margin-bottom: 8px;
+        }
+
+       
+        button{
+            background-color: #1e6cff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="ezkerra">
+            <img src="img/logoa.jpg" alt="Logoa">
+            <h1>Denda</h1>
+        </div>
+        <a href="#">Saskia</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Hasiera</a></li>
+            <li><a href="katalogoa.html">Katalogoa</a></li>
+            <li><a href="#">Nobedadeak</a></li>
+            <li><a href="#">Eskaintzak</a></li>
+            <li><a href="kontaktua.html">Kontaktua</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Eskaria</h2>
+        <hr>
+
+        <h3>Produktuak</h3>
+
+        <table>
+            <tr>
+                <th>Produktua</th>
+                <th>Salneurria</th>
+                <th>Kopurua</th>
+                <th>Guztira</th>
+            </tr>
+            <tr>
+                <td>Def Leppard - Hysteria</td>
+                <td>15,99 €</td>
+                <td>1</td>
+                <td>15,99 €</td>
+            </tr>
+            <tr>
+                <td>U2 - The Joshua Tree</td>
+                <td>15,99 €</td>
+                <td>1</td>
+                <td>15,99 €</td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Guztira</strong></td>
+                <td><strong>31,98 €</strong></td>
+            </tr>
+        </table>
+
+        <button>Produktuak aldatu</button>
+
+        <h3>Zure datuak</h3>
+
+        <section>
+            <p><strong>Izena:</strong> Beñat</p>
+            <p><strong>Abizena:</strong> Badiola</p>
+            <p><strong>Helbidea:</strong> Kale Handi,10</p>
+            <p><strong>Herria:</strong> Ondarroa</p>
+            <p><strong>Posta-kodea:</strong> 48700</p>
+            <p><strong>Probintzia:</strong> Bizkaia</p>
+            <p><strong>E-maila:</strong> bentxobadi@gmail.com</p>
+        </section>
+
+        <button>Zure datuak aldatu</button><br>
+        <a href="eskaria3.html"><button>Hurrengoa</button></a>
+    </main>
+
+    <footer>
+        <p>&copy; 2020 Lea Artibai Ikastetxea</p>
+    </footer>
+
+</body>
+</html>
