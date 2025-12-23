@@ -120,7 +120,7 @@ main{
         grid-column: 7/8
     }    
 }
-@media (min-width: 762px) {
+@media (max-width: 762px) {
     main{
         grid-template-columns: repeat(6,1fr);
     }
@@ -150,3 +150,51 @@ main{
 
 
 
+
+
+
+#menu-check {
+    display: none;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: flex; 
+    }
+
+    #nav-links {
+        display: none; 
+        flex-direction: column;
+        padding: 0;
+        margin-top: 10px;
+        border-top: 1px dashed black;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    
+    #menu-check:checked ~ #nav-links {
+        display: block;
+    }
+}
